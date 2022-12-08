@@ -17,4 +17,6 @@ def caloriesPerElf(lines):
 if __name__ == '__main__':
     lines = readInput()
     calories = caloriesPerElf(lines)
-    print(max(calories))
+    sortedCalories = sorted(calories, reverse=True)
+    print(sortedCalories[0]+sortedCalories[1]+sortedCalories[2])
+    
